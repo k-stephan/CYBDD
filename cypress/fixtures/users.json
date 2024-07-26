@@ -1,10 +1,10 @@
 {
   "valid": {
-    "username": "Admin",
-    "password": "admin123"
+    "username": "SFSMARSW",
+    "password": "mars1"
   },
   "invalid": {
-    "username": "Admin",
-    "password": "Admin"
+    "username": "SFSMARSW",
+    "password": "mars21"
   }
 }

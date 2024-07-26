@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
 
 Given('I am in login page', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com')
+    cy.visit('https://imarscrmdev.phxa.com/MARSWeb2/Login')
   })
 
 When('I enter valid username and password', () => {
