@@ -67,14 +67,14 @@ Given('Vist MARS URL', function ()
     cy.wait(5000)
 
     cy.get("[title='Find: Report Criteria for Executive Information Summary - Firm - EIS FIRM CY']").should('contain','EIS FIRM CY')
-    //cy.wait(5000)
+    cy.wait(4000)
+   // cy.pause()
+    //cy.get('.align-items-end > :nth-child(1) > mars-daterange-ctrl > div.ng-star-inserted > .d-inline-flex > [style="width: 45%; min-width: 150px;"]').clear().type("Current Year")
+    //cy.get(".k-floating-label-container[style='width: 45%; min-width: 150px;'][1]").should("be.enabled")
+    //cy.get('.align-items-end > :nth-child(1) > mars-daterange-ctrl > div.ng-star-inserted > .d-inline-flex > [style="width: 25%; margin-right: 10px; margin-left: 10px; min-width: 130px;"] > .k-datepicker').clear().type("01/01/2024")
+    cy.get("kendo-floatinglabel>kendo-combobox+label").contains(" Primary").type("{selectall}{backspace}").type("Current Year{Enter}")
+
     cy.pause()
-    cy.contains(".k-searchbar>[aria-labelledby]","k-bbbbf3ef").type("Current Year")
-    
-
-    //cy.get("#k-53a76e51-b3d5-47e0-a615-d0783c720949").type("Current Year")
-
-
   })
 
   Then('select display fields', function () 
